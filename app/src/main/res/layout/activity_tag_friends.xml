@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.AppFlow.TagFriendsActivity"
+        android:background="@android:color/white">
+
+    <RelativeLayout
+            android:id="@+id/top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/tag_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnBack"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:visibility="visible" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/top_menu"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:background="@color/color_bg"
+            android:layout_above="@id/btn_done"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+            android:fontFamily="@font/za"
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/you_have_no_followers"
+            android:textColor="@color/color_pick"
+            android:textSize="16sp" />
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/color_pick"
+            android:textColor="@android:color/black"
+            android:text="@string/done"
+            android:id="@+id/btn_done"
+            android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

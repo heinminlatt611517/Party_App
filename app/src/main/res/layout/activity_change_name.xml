@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_bg"
+        tools:context=".views.AppFlow.optional.ChangeNameActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/change_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnBack"
+                android:padding="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="40dp">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_name"
+                android:textColor="@color/color_pick"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_alignStart="@+id/imageView11"
+                android:background="@drawable/et_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                tools:ignore="UnknownIdInLayout"
+                android:layout_alignLeft="@+id/imageView11"
+                android:layout_marginTop="20dp"
+                android:layout_height="45dp">
+
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_person" />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Name" />
+        </LinearLayout>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_bottom_color"
+                android:text="@string/submit"
+                android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>

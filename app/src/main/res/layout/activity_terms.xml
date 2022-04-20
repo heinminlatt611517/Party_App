@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical"
+        tools:context=".views.AppFlow.optional.TermsActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/terms_amp_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnBack"
+                android:padding="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="Lorem ipsum"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/color_pick" />
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="In the 16th century, reunified by the Taungoo dynasty, the country was for a brief period the largest empire in the history of Mainland Southeast Asia.[9] The early 19th century Konbaung dynasty ruled over an area that included modern Myanmar and briefly controlled Manipur and Assam as well. The British took over the administration of Myanmar after three Anglo-Burmese Wars in the 19th century and the country became a British colony."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_pick" />
+    </LinearLayout>
+
+</LinearLayout>

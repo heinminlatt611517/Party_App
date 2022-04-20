@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.AppFlow.GoLiveActivity">
+
+    <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnBack"
+                android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_top">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_centerInParent="true" />
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/publisher_container"></FrameLayout>
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_counter"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true" />
+
+        <Button
+                android:text="@string/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_stop"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

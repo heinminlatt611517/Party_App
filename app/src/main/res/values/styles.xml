@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+
+    <style name="RegistrationTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorApp1</item>
+        <item name="colorPrimaryDark">@color/colorApp1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="homeScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">#110929</item>
+    </style>
+
+    <style name="LoginScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/color_pick</item>
+    </style>
+
+
+    <style name="Widget.MaterialRatingBar.RatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:maxHeight">36dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Small">
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Indicator">
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Indicator.Small">
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <attr name="sc_corner_radius" format="dimension" />
+    <attr name="sc_border_width" format="dimension" />
+    <attr name="sc_tint_color" format="color" />
+    <attr name="sc_checked_text_color" format="color" />
+
+
+    <style name="Widget.MaterialRatingBar.RatingBar.image" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/za</item>
+    </style>
+
+
+</resources>

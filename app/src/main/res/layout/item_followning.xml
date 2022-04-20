@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/color_bg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/person_logo"
+            android:id="@+id/iv_profile"
+            android:layout_centerVertical="true" />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_profile"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toStartOf="@+id/imageView12"
+            android:layout_toEndOf="@+id/iv_profile">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="JOHN BELLIRO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_pick"
+                android:id="@+id/tv_name" />
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="UI Designer, Manager "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textColor="@color/color_pick"
+                android:textSize="12sp"
+                android:id="@+id/tv_des" />
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_close"
+            android:id="@+id/btn_unfollow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_location" />
+
+    <TextView
+            android:fontFamily="@font/za"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="@string/please_turn_on_device_location_to_enjoy_best_experience" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <Button
+                android:id="@+id/btnNo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textColor="@color/color_text"
+                android:text="@string/no"
+                android:layout_alignParentLeft="false"
+                android:layout_toLeftOf="@+id/btnYes"
+                android:background="#E0EAF1"
+                android:layout_marginRight="5dp" />
+
+        <Button
+                android:id="@+id/btnYes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/color_text"
+                android:layout_height="40dp"
+                android:text="@string/yes"
+                android:layout_alignParentRight="true"
+                android:background="#E0EAF1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

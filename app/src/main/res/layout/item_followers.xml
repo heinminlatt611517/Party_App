@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="#190F30"
+        android:layout_height="80dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/person_logo"
+                android:id="@+id/iv_profile"
+                android:layout_centerVertical="true" />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical">
+
+            <TextView
+                    android:fontFamily="@font/za"
+                    android:id="@+id/tv_name"
+                    android:text="JOHN BELLIRO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_pick" />
+
+            <TextView
+                    android:fontFamily="@font/za"
+                    android:text="UI Designer, Manager "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_pick"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_des" />
+
+        </LinearLayout>
+
+        <Button
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_follow"
+                android:background="@drawable/btn_bottom_color"
+                android:layout_centerVertical="true"
+                android:text="@string/follow"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp" />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_pick"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

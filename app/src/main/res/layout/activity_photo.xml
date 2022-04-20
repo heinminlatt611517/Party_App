@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.AppFlow.PhotoActivity">
+
+    <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnBack"
+                android:padding="10dp" />
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/icPhoto"
+            android:layout_below="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/photo"
+            android:scaleType="fitXY" />
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical"
+        tools:context=".views.AppFlow.optional.ContactUsActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/contact_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnBack"
+                android:padding="10dp"
+                android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:textColorHint="@color/color_pick"
+            android:textColor="@android:color/white"
+            android:alpha=".6"
+            android:hint="@string/user_e_mail_com"
+            android:background="@drawable/et_gradiant_redus" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:gravity="top"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/color_pick"
+            android:alpha=".6"
+            android:padding="10dp"
+            android:background="@drawable/et_gradiant_redus"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Loren ipsum dolor sit met" />
+
+    <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bottom_color"
+            android:layout_margin="15dp"
+            android:text="@string/send"
+            android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.parallax.partyapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+            android:name=".PartyApp"
+            android:allowBackup="false"
+            android:hardwareAccelerated="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true"
+            tools:replace="android:allowBackup">
+        <activity android:name=".views.AppFlow.AdsActivity"></activity>
+        <activity android:name=".views.AppFlow.RewardDetailsActivity" />
+        <activity android:name=".views.AppFlow.HowEarnPointActivity" />
+        <activity
+                android:name=".views.filterUtil.FilterActivity"
+                android:noHistory="true"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.ProfileActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.UserInfoActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.BottomSheetActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.TaggedFriendListActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.EditeProfleScreenActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/RegistrationTheme"
+                android:windowSoftInputMode="adjustPan" />
+        <activity
+                android:name=".views.AppFlow.LikeActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.ForgetPassConfirmActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.SplashActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".views.RegistrationFlow.IntroActivity"
+                android:screenOrientation="portrait" />
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key" />
+
+        <service android:name=".Utils.LocationService" />
+
+        <activity
+                android:name=".views.AppFlow.MediaDetailsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.WelcomeActivity"
+                android:screenOrientation="portrait" />
+
+        <provider
+                android:name="com.facebook.FacebookContentProvider"
+                android:authorities="com.facebook.app.FacebookContentProvider1383750851765122"
+                android:exported="true" />
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.parallax.partyapp.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true"
+                tools:replace="android:authorities">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+
+        <activity
+                android:name="com.facebook.FacebookActivity"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:label="@string/app_name" />
+        <activity
+                android:name="com.facebook.CustomTabActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".views.AppFlow.optional.EditProfileActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.FollowersActivity"
+                android:theme="@style/LoginScreen" />
+        <activity
+                android:name=".views.RegistrationFlow.LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LoginScreen" />
+        <activity
+                android:name=".views.AppFlow.TagFriendsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.HowAreYouFeelingActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.WhatAreYoDoingActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.MediaActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:name=".views.AppFlow.GoLiveActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.VideoActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.PhotoActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.RegistrationActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/RegistrationTheme"
+                android:windowSoftInputMode="adjustPan" />
+        <activity
+                android:name=".views.RegistrationFlow.CongratulationsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.ForgetPassActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/homeScreen" />
+        <activity
+                android:name=".views.AppFlow.CommentActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.ContactUsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.LocationActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.ChangeNameActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.ChangePasswordActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.InviteFriendsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.PrivacyPolicyActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.TermsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.SendFeedbackActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.RegistrationFlow.OtpConfirmationActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".views.AppFlow.optional.SettingsActivity"
+                android:screenOrientation="portrait" />
+        <activity android:name=".views.VideoRecorder" />
+    </application>
+
+</manifest>

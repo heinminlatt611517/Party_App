@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg"
+        android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/photo_profile_round_2"
+            app:civ_border_color="@color/color_pick"
+            app:civ_border_width="1dp"
+            android:id="@+id/ivPhofile"
+            android:layout_centerVertical="true" />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivPhofile"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/color_pick" />
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="Party was really good."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvComment"
+                android:textColor="@color/color_pick" />
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="2 hour ago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_pick"
+                android:textSize="12sp"
+                android:id="@+id/tv_time" />
+    </LinearLayout>
+</RelativeLayout>

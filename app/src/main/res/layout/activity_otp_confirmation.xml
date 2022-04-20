@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_bg"
+        tools:context=".views.RegistrationFlow.OtpConfirmationActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar"
+            android:id="@+id/layout1">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="OTP Confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnBack"
+                android:padding="10dp"
+                android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+            android:fontFamily="@font/za"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification Code"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/color_pick" />
+
+    <TextView
+            android:fontFamily="@font/za"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please type the verification\n code below:"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_pick" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+        <EditText
+                android:id="@+id/editText1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:hint="-"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+        <EditText
+                android:id="@+id/editText2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:hint="-"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+        <EditText
+                android:id="@+id/editText3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:hint="-"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+        <EditText
+                android:id="@+id/editText4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:hint="-"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Ok"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_bottom_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+</LinearLayout>

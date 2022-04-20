@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:id="@+id/layout_View"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_title_bar_radius"
+                    android:padding="20dp">
+
+                <TextView
+                        android:fontFamily="@font/za"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ic_profile"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_pick"
+                        android:text="Vendor A"
+                        android:id="@+id/tv_redeem" />
+
+                <Button
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:text="@string/view"
+                        android:fontFamily="@font/za"
+                        android:id="@+id/btn_view"
+                        android:textSize="12dp"
+                        android:textColor="@color/color_bg"
+                        android:background="@drawable/btn_bottom_color_pick_radius"
+                        android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <!--<View-->
+        <!--android:layout_below="@+id/layout_View"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_divider_pick"/>-->
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

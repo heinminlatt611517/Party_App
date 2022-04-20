@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_bg"
+        tools:context=".views.AppFlow.optional.SettingsActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnBack"
+                android:padding="10dp"
+                android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                <TextView
+                        android:fontFamily="@font/za"
+                        android:text="MYANMAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/color_text" />
+
+                <Switch
+                        android:id="@+id/switch_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+
+                <TextView
+                        android:fontFamily="@font/za"
+                        android:text="ENGLISH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/color_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                    <TextView
+                            android:fontFamily="@font/za"
+                            android:text="@string/post_photos_on_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text"
+                            android:layout_centerVertical="true" />
+
+                    <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:alpha=".3" />
+
+                <RelativeLayout
+                        android:id="@+id/layoutInviteFriend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                    <TextView
+                            android:fontFamily="@font/za"
+                            android:text="@string/invite_friends"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:alpha=".3" />
+
+                <RelativeLayout
+                        android:id="@+id/layoutSendFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                    <TextView
+                            android:fontFamily="@font/za"
+                            android:text="@string/send_feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:alpha=".3" />
+
+                <RelativeLayout
+                        android:id="@+id/layoutTrems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                    <TextView
+                            android:fontFamily="@font/za"
+                            android:text="@string/terms_amp_service"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:alpha=".3" />
+
+                <RelativeLayout
+                        android:id="@+id/layoutPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                    <TextView
+                            android:fontFamily="@font/za"
+                            android:text="@string/privacy_policy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:alpha=".3" />
+
+                <RelativeLayout
+                        android:id="@+id/layoutContactUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                    <TextView
+                            android:fontFamily="@font/za"
+                            android:text="@string/contact_us"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text" />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:alpha=".3" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

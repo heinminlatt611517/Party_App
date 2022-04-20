@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_blue_one"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/iv_loyality"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/discount_codes_reach_more_people_eventbrite"
+            android:scaleType="centerCrop" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_pick"
+                android:text="offer from vendor 1"
+                android:id="@+id/tv_title" />
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_pick"
+                android:text="Reedem point: 100"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tv_points" />
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_divider_pick" />
+
+
+</LinearLayout>

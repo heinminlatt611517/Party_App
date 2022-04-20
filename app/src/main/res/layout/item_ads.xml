@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+            app:srcCompat="@drawable/img_ads_1"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:layout_width="325dp"
+            android:layout_height="170dp"
+            android:layout_marginEnd="15dp" />
+</RelativeLayout>

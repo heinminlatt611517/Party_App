@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/iv_type_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_star_socializer" />
+
+        <TextView
+                android:id="@+id/tv_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_type_image"
+                android:text="Socializer"
+                android:textColor="@color/color_pick"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/tv_point_to_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="0 pts - 299 pts"
+                android:textColor="@color/color_pick"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:text="Post a picture, video or live video of your night out"
+                android:textColor="@color/color_pick" />
+
+        <TextView
+                android:id="@+id/tv_post_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="5 pts"
+                android:textColor="@color/color_pick"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:text="Receive a like or comment on your picture, video or live video post"
+                android:textColor="@color/color_pick" />
+
+        <TextView
+                android:id="@+id/tv_receive_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="5 pts"
+                android:textColor="@color/color_pick"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:text="Like or comment on a picture, video or live video post"
+                android:textColor="@color/color_pick" />
+
+        <TextView
+                android:id="@+id/tv_give_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="5 pts"
+                android:textColor="@color/color_pick"
+                android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

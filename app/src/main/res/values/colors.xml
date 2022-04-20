@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#842382</color>
+    <!--<color name="colorPrimaryDark">#243660</color>-->
+    <color name="colorPrimaryDark">#842382</color>
+    <!--<color name="colorAccent">#243660</color>-->
+    <color name="colorAccent">#842382</color>
+
+    <!--<color name="colorApp1">#243660</color>-->
+    <!--<color name="colorApp1">#842382</color>-->
+    <color name="colorApp1">#17022D</color>
+    <color name="colorApp2">#3F51B5</color>
+
+
+    <color name="color_blue">#03339E</color>
+    <color name="color_transparet_dark">#68000000</color>
+
+    <color name="color_text">#141415</color>
+    <color name="color_divider">#747C7C7C</color>
+    <color name="color_gray_light">#207C7C7C</color>
+    <color name="color_pick">#842382</color>
+    <color name="color_bg">#190F30</color>
+
+
+    <color name="color_blue_one">#190F30</color>
+
+    <color name="color_divider_pick">#6F842382</color>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".views.AppFlow.LocationActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_title_bar"
+            android:id="@+id/top">
+
+        <TextView
+                android:fontFamily="@font/za"
+                android:text="@string/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/color_pick"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        <ImageView
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnBack"
+                android:padding="10dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/container_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top"
+            android:layout_above="@id/btn_done" />
+
+    <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F5F5F5">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+
+            <TextView
+                    android:fontFamily="@font/za"
+                    android:id="@+id/tv_add_favorite2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/enter_postal_code_or_address" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bottom_color"
+            android:text="@string/select"
+            android:textColor="@color/color_blue_one"
+            android:id="@+id/btn_done"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp" />
+
+
+</RelativeLayout>
