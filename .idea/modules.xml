@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Party_App.iml" filepath="$PROJECT_DIR$/.idea/modules/Party_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Party_App.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Party_App.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Party_App.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Party_App.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/looping-library/Party_App.looping-library.iml" filepath="$PROJECT_DIR$/.idea/modules/looping-library/Party_App.looping-library.iml" />
     </modules>
   </component>
 </project>
